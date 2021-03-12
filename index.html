@@ -6,7 +6,6 @@
 		<title>Tarefas</title>
 		<link rel="stylesheet" href="node_modules/todomvc-common/base.css" />
 		<link rel="stylesheet" href="node_modules/todomvc-app-css/index.css" />
-		
 	</head>
 	<body>
 		<div id="app">
@@ -29,7 +28,7 @@
 								v-bind:class="{
 										completed:item.done,
 										editing: item === currentEdit}"
-								v-for="(item,index) in todos"
+								v-for="(item,index) in filteredTodos"
 							>
 								<div class="view">
 									<input class="toggle" type="checkbox" v-model="item.done" />
@@ -50,13 +49,28 @@
 						<span class="todo-count"><strong>0</strong> Itens Restantes</span>
 						<ul class="filters">
 							<li>
-								<a class="selected" href="#/">Todas</a>
+								<a
+									href="#"
+									@click="setFilter('all')"
+									:class="{ selected: filter == 'all' }"
+									>Todas</a
+								>
 							</li>
 							<li>
-								<a href="#/active">Não concluidas</a>
+								<a
+									href="#"
+									@click="setFilter('todo')"
+									:class="{ selected: filter == 'todo' }"
+									>Não concluidas</a
+								>
 							</li>
 							<li>
-								<a href="#/completed">Concluídas</a>
+								<a
+									href="#"
+									@click="setFilter('done')"
+									:class="{ selected: filter == 'done' }"
+									>Concluídas</a
+								>
 							</li>
 						</ul>
 						<button class="clear-completed">Apagar Concluídas</button>
