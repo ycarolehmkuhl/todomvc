@@ -46,23 +46,21 @@
 						</ul>
 					</section>
 					<footer class="footer">
-						<span class="todo-count"><strong>0</strong> Itens Restantes</span>
+						
 						<ul class="filters">
 							<li>
 								<a
 									href="#"
 									@click="setFilter('all')"
 									:class="{ selected: filter == 'all' }"
-									>Todas</a
-								>
+									>Todas</a>
 							</li>
 							<li>
 								<a
 									href="#"
 									@click="setFilter('todo')"
 									:class="{ selected: filter == 'todo' }"
-									>Não concluidas</a
-								>
+									>Não concluidas</a>
 							</li>
 							<li>
 								<a
@@ -72,8 +70,9 @@
 									>Concluídas</a
 								>
 							</li>
+							
 						</ul>
-						<button class="clear-completed">Apagar Concluídas</button>
+						<button class="clear-completed">Apagar tudo</button>
 					</footer>
 				</template>
 			</section>
@@ -81,6 +80,6 @@
 
 		<!-- <script src="node_modules/todomvc-common/base.js"></script> -->
 		<script src="node_modules/vue/dist/vue.js"></script>
-		<script src="JavaScript/app.js"></script>
+		<script src="src/app.js"></script>
 	</body>
 </html>
