@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Tarefas</title>
+		<link rel="stylesheet" href="node_modules/todomvc-common/base.css" />
+		<link rel="stylesheet" href="node_modules/todomvc-app-css/index.css" />
+		
+	</head>
+	<body>
+		<div id="app">
+			<section class="todoapp">
+				<header class="header">
+					<h1>Tarefas</h1>
+					<input
+						class="new-todo"
+						placeholder="Digite aqui as suas tarefas"
+						@keydown.enter="addTodos"
+						v-model="inputText"
+					/>
+				</header>
+				<template v-if="todos.length">
+					<section class="main">
+						<input id="toggle-all" class="toggle-all" type="checkbox" />
+						<label for="toggle-all">Marque tudo como concluido</label>
+						<ul class="todo-list">
+							<li
+								v-bind:class="{
+										completed:item.done,
+										editing: item === currentEdit}"
+								v-for="(item,index) in todos"
+							>
+								<div class="view">
+									<input class="toggle" type="checkbox" v-model="item.done" />
+									<label @dblclick="getEditing(item)">{{ item.title }}</label>
+									<button class="destroy" @click="removeItem(index)"></button>
+								</div>
+								<input
+									class="edit"
+									v-model="item.title"
+									@keyup.enter="saveEdit(item, index)"
+									@blur="saveEdit(item, index)"
+									@keyup.esc="cancelEdit"
+								/>
+							</li>
+						</ul>
+					</section>
+					<footer class="footer">
+						<span class="todo-count"><strong>0</strong> Itens Restantes</span>
+						<ul class="filters">
+							<li>
+								<a class="selected" href="#/">Todas</a>
+							</li>
+							<li>
+								<a href="#/active">Não concluidas</a>
+							</li>
+							<li>
+								<a href="#/completed">Concluídas</a>
+							</li>
+						</ul>
+						<button class="clear-completed">Apagar Concluídas</button>
+					</footer>
+				</template>
+			</section>
+		</div>
+
+		<!-- <script src="node_modules/todomvc-common/base.js"></script> -->
+		<script src="node_modules/vue/dist/vue.js"></script>
+		<script src="JavaScript/app.js"></script>
+	</body>
+</html>
