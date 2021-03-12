@@ -1,5 +1,5 @@
 Instalação 
-## npminstall ###
+## npminstall 
 Para iniciar o projeto
-### npm start ###
+### npm start
 
