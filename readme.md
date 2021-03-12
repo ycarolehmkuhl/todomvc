@@ -41,15 +41,15 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 - [Vue.JS](https://vuejs.org/)
 
-
+# Template
 ![](/public/tarefas.png)
 
 # Autor
-## Ycaro de S. Lehmkuhl
-- 🛠 Frontend Developer 
-- (47) 9.9601-1022
-- (48) 9.8409-9301
-- E-mail - ycaro.lehmkuhl@gmail.com
-- [Linkedin](https://www.linkedin.com/in/ycaro-de-souza-lehmkuhl-4104924a/)
-- [Site Pessoal](https://ycarosl.com)
+## ☕ Ycaro de S. Lehmkuhl ☕
+- 😎 Frontend Developer 
+- 📞 (47) 9.9601-1022
+- 📞 (48) 9.8409-9301
+- ✉️ E-mail - ycaro.lehmkuhl@gmail.com
+- 🔗 [Linkedin](https://www.linkedin.com/in/ycaro-de-souza-lehmkuhl-4104924a/)
+- 🔗 [Site Pessoal](https://ycarosl.com)
 
