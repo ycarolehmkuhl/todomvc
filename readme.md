@@ -33,7 +33,7 @@ $ npm start
 - [x] Filtrar tarefas feitas e não feitas através do botão Todos.
 - [x] Filtrar tarefas não concluidas através do botão Não concluidas.
 - [x] Filtrar tarefas concluidas através do botão Concluidas.
-- [ ] Apagar todas as tarefas através do botão Apagar tudo.
+- [x] Apagar todas as tarefas através do botão Apagar tudo.
 
 ### 🛠 Tecnologias
 
