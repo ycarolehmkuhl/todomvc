@@ -28,6 +28,7 @@
 				});
 			},
 		},
+		// Todas as Funções de Ação 
 		methods: {
 			addTodos(e) {
 				const { inputText, todos } = this;
