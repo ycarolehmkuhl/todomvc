@@ -1,7 +1,7 @@
 <h1 align="center">Todo MVC - Tarefas</h1>
 
 <h4 align="center"> 
-	🚧  Em construção...  🚧
+	
 </h4>
 
 ### Pré-requisitos
