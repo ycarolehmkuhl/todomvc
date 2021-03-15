@@ -1,4 +1,4 @@
-<h1 align="center">Todo MVC</h1>
+<h1 align="center">Todo MVC - Tarefas</h1>
 
 <h4 align="center"> 
 	🚧  Em construção...  🚧
