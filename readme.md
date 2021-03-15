@@ -28,7 +28,7 @@ $ npm start
 # O servidor inciará na porta:3000 - acesse <http://localhost:3000>
 ```
 
-# ✅ Features
+# ✅ Funções
 - [x] Adicionar informação escrita no imput, clicando com enter.
 - [x] Filtrar tarefas feitas e não feitas através do botão Todos.
 - [x] Filtrar tarefas não concluidas através do botão Não concluidas.
