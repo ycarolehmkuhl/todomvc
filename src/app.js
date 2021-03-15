@@ -28,7 +28,7 @@
 				});
 			},
 		},
-		// Todas as Funções de Ação 
+		// Todas as Funções de Ação
 		methods: {
 			addTodos(e) {
 				const { inputText, todos } = this;
@@ -46,12 +46,10 @@
 			},
 
 			removeItem(index) {
-				thi	s.todos.splice(index, 1);
-								
+				this.todos.splice(index, 1);
 			},
 			removeAll(index) {
-				this.todos = [ ];
-								
+				this.todos = [];
 			},
 
 			getEditing(item) {

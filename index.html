@@ -4,7 +4,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>Tarefas</title>
-		
+
 		<link rel="stylesheet" href="css/styles.css" />
 	</head>
 	<body>
@@ -46,21 +46,22 @@
 						</ul>
 					</section>
 					<footer class="footer">
-						
 						<ul class="filters">
 							<li>
 								<a
 									href="#"
 									@click="setFilter('all')"
 									:class="{ selected: filter == 'all' }"
-									>Todas</a>
+									>Todas</a
+								>
 							</li>
 							<li>
 								<a
 									href="#"
 									@click="setFilter('todo')"
 									:class="{ selected: filter == 'todo' }"
-									>Não concluidas</a>
+									>Não concluidas</a
+								>
 							</li>
 							<li>
 								<a
@@ -70,9 +71,10 @@
 									>Concluídas</a
 								>
 							</li>
-							
 						</ul>
-						<button class="clear-completed" v-on:click="removeAll">Apagar tudo</button>
+						<button class="clear-completed" v-on:click="removeAll">
+							Apagar tudo
+						</button>
 					</footer>
 				</template>
 			</section>
