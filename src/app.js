@@ -11,7 +11,7 @@
 			filter: "all",
 			inputText: "",
 			currentEdit: null,
-			byebye: "",
+
 		},
 		computed: {
 			filteredTodos: function () {
@@ -28,7 +28,7 @@
 				});
 			},
 		},
-		// Todas as Funções de Ação
+		
 		methods: {
 			addTodos(e) {
 				const { inputText, todos } = this;
@@ -65,10 +65,6 @@
 				}
 			},
 
-			cancelEdit() {
-				this.currentEdit.title = this.byebye;
-				this.currentEdit = null;
-			},
 
 			setFilter(filter) {
 				this.filter = filter;
