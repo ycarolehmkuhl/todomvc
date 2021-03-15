@@ -46,7 +46,7 @@
 			},
 
 			removeItem(index) {
-				this.todos.splice(index, 1);
+				thi	s.todos.splice(index, 1);
 								
 			},
 			removeAll(index) {
