@@ -11,7 +11,7 @@
 			filter: "all",
 			inputText: "",
 			currentEdit: null,
-
+			
 		},
 		computed: {
 			filteredTodos: function () {
@@ -28,7 +28,7 @@
 				});
 			},
 		},
-		
+		//Funções de Ação
 		methods: {
 			addTodos(e) {
 				const { inputText, todos } = this;
@@ -44,25 +44,28 @@
 				});
 				this.inputText = "";
 			},
-
+			// Botão para excluir item (X)
 			removeItem(index) {
 				this.todos.splice(index, 1);
 			},
+			// Filtro Apagar tudo
 			removeAll(index) {
 				this.todos = [];
 			},
-
+			// Editar o Campo
 			getEditing(item) {
-				this.currentEdit = item;
-				this.byebye = item.title;
+				this.currentEdit = item.title;
 			},
-
+			// Fução para salvar a alteração
 			saveEdit(item, index) {
-				if (item.title.trim().length === 0) {
-					this.todos.splice(index, 1);
-				} else {
+				if (this.currentEdit.trim().length > 0) {
+					item.title = this.currentEdit						
 					this.currentEdit = "";
 				}
+			},
+			cancelEdit(item){
+				this.currentEdit = "";
+		
 			},
 
 
